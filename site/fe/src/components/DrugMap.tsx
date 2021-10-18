@@ -110,11 +110,11 @@ const IntroNotification = observer(() => {
 
     return (
         <MapNotification
-            title={<span style={{letterSpacing: "0.09rem"}}>💊 Drugmap</span>}
+            title={<span style={{letterSpacing: "0.09rem"}}>💊 UK Drug Map</span>}
             close={close}
         >
             <p>
-            UKDrugMap shows the percent of adulterated recreational drug samples tested in the UK, separated by region. A substance is adulterated if it contains an active chemical besides the user's expected drug.
+            UK Drug Map shows the percent of adulterated recreational drug samples tested in the UK, separated by region. A substance is adulterated if it contains an active chemical besides the user's expected drug.
             </p>
             <p>
             Click a substance name on the left panel to see substance-specific results. Click a region to view results only for that region. 

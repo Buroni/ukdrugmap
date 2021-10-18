@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Space+Grotesk&display=swap");
+
+body {
+    top: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    height: 100%;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.map-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    padding-top: 1rem;
+    background-color: rgba(70, 70, 70, 0.9);
+    color: #ffffff;
+    letter-spacing: 0.09rem;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+    border-right: 1px solid rgb(100, 100, 100);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.mapboxgl-ctrl-logo {
+    display: none !important;
+}
+
+.dmap-notification {
+    width: 28rem;
+    height: 20rem;
+    background-color: rgba(70, 70, 70, 0.9);
+    border: 1px solid rgb(100, 100, 100);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    color: white;
+    padding: 1rem 1rem;
+    overflow: auto;
+}
+
+.legend {
+    letter-spacing: 0.07rem;
+    width: 16rem;
+    height: 5rem;
+    background-color: rgba(70, 70, 70, 0.3);
+    position: absolute;
+    bottom: 1rem;
+    left: 18rem;
+    color: white;
+    padding: 1rem;
+    z-index: 999;
+    pointer-events: none;
+    font-size: 0.8rem;
+}
+
+.legend__labels {
+    width: 16rem;
+    height: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.legend__header {
+    margin-bottom: 0.6rem;
+    font-size: 0.9rem;
+}
+
+.legend__info {
+    font-size: 0.8rem;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    font-size: 0.9rem;
+    letter-spacing: 0.08rem;
+    margin-bottom: 2rem;
+}
+
+table th {
+    text-align: left;
+}
+
+.match-drug {
+    color: #57c957;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+td, th {
+    padding: 0.25rem 0.4rem;
+}
+
+.highlighted {
+    color: rgb(79, 173, 255);
+}
+
+.bignumber {
+    letter-spacing: 0.08rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.bignumber:nth-child(odd) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.bignumber {
+    padding: 0.2rem;
+}
+
+.bignumber__title {
+    font-size: 1rem;
+    width: 50%;
+    flex: 0 0 auto;
+    padding: 0.4rem 0.7rem;
+}
+
+.bignumber__number {
+    font-size: 1.4rem;
+    margin-top: 0.2rem;
+    flex: 1 0 auto;
+    padding: 0.4rem;
+}
+
+.bignumber__container {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+    width: 100%;
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.palette {
+    display: flex;
+    justify-content: flex-start;
+    width: 15rem;
+    height: 2rem;
+    display: relative;
+    content: "";
+    background: linear-gradient(to right, #238823, #FFBF00, #D2222D);
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.palette:after {
+    content:"";
+    position: absolute;
+    height: 2rem;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid white;
+    z-index: 999;
+    transform: translate(-50%);
+}
+
+.dark {
+    color: black;
+}
+
+.list__item {
+    cursor: pointer;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+}
+
+.list__item:hover, .about:hover {
+    color: #4fadff;
+}
+
+.list__item--selected {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: #4fadff;
+    text-decoration-thickness: 0.4rem;
+    color: white !important;
+}
+
+.list__item-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.about {
+    cursor: pointer;
+    padding: 2rem 1rem;
+    font-size: 1rem;
+    margin-top: auto;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.link {
+    color: #4fadff;
+    cursor: pointer;
+}
+
+a, a:visited {
+    text-decoration: none;
+}

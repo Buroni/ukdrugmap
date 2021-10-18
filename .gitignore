@@ -1,0 +1,6 @@
+__pycache__
+site/drugmap_server/drugmap_server/__pycache__
+site/fe/dist
+site/fe/node_modules
+site/fe/.env
+data

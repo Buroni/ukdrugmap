@@ -1,0 +1,19 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PGUSER=jake PGHOST=/tmp PGDATABASE=jake PGPORT=5433 node index.js",
+    "start:vps": "PGUSER=jake PGHOST=/var/run/postgresql PGDATABASE=jake PGPORT=5432 node index.js",
+    "serve": "PGUSER=jake PGHOST=/var/run/postgresql PGDATABASE=jake PGPORT=5432 pm2 start index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "path": "^0.12.7",
+    "pg": "^8.7.1"
+  }
+}

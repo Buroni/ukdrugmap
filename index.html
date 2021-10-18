@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/ukdrugmap/site/fe/dist/base.css">
+        <script src="/ukdrugmap/site/fe/dist/base.js"></script>
+    </head>
+    <body>
+        <div id="react-root"></div>
+        <script>
+            const { React, ReactDOM, DrugMap } = LIB["base"];
+            const Factory = React.createElement.bind(null, DrugMap);
+            ReactDOM.render(
+                Factory({}),
+                document.querySelector("#react-root")
+            );
+        </script>
+    </body>
+</html>

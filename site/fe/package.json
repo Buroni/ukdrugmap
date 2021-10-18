@@ -1,0 +1,45 @@
+{
+  "name": "drugmap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "env NODE_ENV=development webpack --watch --mode=development",
+    "build": "env NODE_ENV=production webpack --mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/plugin-proposal-decorators": "^7.14.5",
+    "@babel/preset-env": "^7.14.7",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.6",
+    "expose-loader": "^3.0.0",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^2.0.0",
+    "postcss-loader": "^6.1.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.35.1",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.42.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "dotenv": "^10.0.0",
+    "dotenv-webpack": "^7.0.3",
+    "mapbox-gl": "^1.13.1",
+    "mobx-react": "^7.2.0",
+    "os-browserify": "^0.3.0",
+    "path-browserify": "^1.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-mapbox-gl": "^5.1.1",
+    "tslib": "^2.3.0"
+  }
+}

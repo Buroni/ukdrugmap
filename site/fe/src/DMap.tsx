@@ -129,13 +129,12 @@ export class DMap {
                 "text-variable-anchor": ["top", "bottom", "left", "right"],
                 "text-radial-offset": 0.5,
                 "text-justify": "auto",
-                "text-size": 11,
+                "text-size": 13,
             },
             "paint": {
                 "text-halo-width": 1,
                 "text-halo-color": "black",
                 "text-color": "white",
-                "text-halo-blur": 0.8
             },
         });
     }

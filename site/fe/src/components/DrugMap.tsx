@@ -81,19 +81,22 @@ const StatsNotification = observer(() => {
                 {s.count > 0 ? 
                 (<React.Fragment>
                     <div className="bignumber__container">
-                    <BigNumber title="# Samples" number={s.count}/>
-                    <BigNumber title="% With Adulterants" number={`${s.percentWithAdulterants}%`}/>
+                        <BigNumber title="# Samples" number={s.count}/>
+                        <BigNumber title="% With Adulterants" number={`${s.percentWithAdulterants}%`}/>
                     </div>
-                    <table>
-                        <tr>
-                            <th>Substance</th><th># Samples Containing</th><th>% Samples Containing</th>
-                        </tr>
-                        {s.adulterants.map((a, idx) => (
-                            <tr key={idx} className={a.substance === s.selectedDrug ? "match-drug" : ""}>
-                                <td>{a.substance}</td><td>{a.count}</td><td>{Math.round(a.percentage * 100) || "<1"}%</td>
+                    <div className="table-container">
+                        <div className="table-header">Substances found in samples</div>
+                        <table>
+                            <tr>
+                                <th>Substance</th><th># Samples Containing</th><th>% Samples Containing</th>
                             </tr>
-                        ))}
-                    </table>
+                            {s.adulterants.map((a, idx) => (
+                                <tr key={idx} className={a.substance === s.selectedDrug ? "match-drug" : ""}>
+                                    <td>{a.substance}</td><td>{a.count}</td><td>{Math.round(a.percentage * 100) || "<1"}%</td>
+                                </tr>
+                            ))}
+                        </table>
+                    </div>
                 </React.Fragment>) : <div className="list__item-header">No samples found!</div>}
             </React.Fragment>}   
         </MapNotification>

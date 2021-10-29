@@ -154,6 +154,12 @@ td, th {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.table-container {
+    --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    background-color: rgba(0, 0, 0, 0.2);   
+}
+
 .palette {
     display: flex;
     justify-content: flex-start;
@@ -221,4 +227,12 @@ td, th {
 
 a, a:visited {
     text-decoration: none;
+}
+
+.table-header {
+    letter-spacing: 0.07rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
 }
